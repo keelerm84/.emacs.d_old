@@ -21,4 +21,13 @@
 (color-theme-molokai)
 (setq color-theme-is-global t )
 
+(set-face-foreground 'font-lock-string-face "light gray")
+(set-face-italic-p 'font-lock-string-face nil)
+
+(set-face-foreground 'font-lock-comment-face "light gray")
+(set-face-italic-p 'font-lock-comment-face nil)
+
+(set-face-foreground 'font-lock-comment-delimiter-face "light gray")
+(set-face-italic-p 'font-lock-comment-delimiter-face nil)
+
 (provide 'appearance)
