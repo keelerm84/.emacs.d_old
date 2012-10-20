@@ -1,0 +1,21 @@
+[submodule "site-lisp/color-theme-molokai"]
+	path = site-lisp/color-theme-molokai
+	url = https://github.com/alloy-d/color-theme-molokai.git
+[submodule "site-lisp/change-inner"]
+	path = site-lisp/change-inner
+	url = https://github.com/emacsmirror/change-inner.git
+[submodule "site-lisp/mark-multiple"]
+	path = site-lisp/mark-multiple
+	url = https://github.com/magnars/mark-multiple.el.git
+[submodule "site-lisp/expand-region"]
+	path = site-lisp/expand-region
+	url = https://github.com/magnars/expand-region.el.git
+[submodule "site-lisp/android-mode"]
+	path = site-lisp/android-mode
+	url = https://github.com/remvee/android-mode.git
+[submodule "site-lisp/fuzzy-find-in-projects"]
+	path = site-lisp/fuzzy-find-in-projects
+	url = https://github.com/justinweiss/fuzzy-find-in-project.git
+[submodule "site-lisp/twittering-mode"]
+	path = site-lisp/twittering-mode
+	url = https://github.com/hayamiz/twittering-mode.git
