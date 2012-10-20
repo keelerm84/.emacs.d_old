@@ -62,3 +62,4 @@
 (require 'fuzzy-find-in-project)
 (require 'twittering-mode)
 (require 'android-mode)
+(require 'my-misc)
