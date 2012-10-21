@@ -16,6 +16,8 @@
 (setq-default inhibit-startup-echo-area-message t)
 (setq-default inhibit-startup-screen t)
 
+(global-hl-line-mode 1)
+
 ;; Colors
 (load "~/.emacs.d/site-lisp/color-theme-molokai/color-theme-molokai.el")
 (color-theme-molokai)
