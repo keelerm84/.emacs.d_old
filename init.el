@@ -40,6 +40,7 @@
  (cons 'ecb marmalade)
  (cons 'ido-ubiquitous marmalade)
  (cons 'smex marmalade)
+ (cons 'geben marmalade)
 )
 
 ;; Load extensions
@@ -66,3 +67,4 @@
 (require 'twittering-mode)
 (require 'android-mode)
 (require 'my-misc)
+(require 'geben)
