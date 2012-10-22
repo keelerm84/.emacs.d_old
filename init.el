@@ -68,3 +68,5 @@
 (require 'android-mode)
 (require 'my-misc)
 (require 'geben)
+(require 'eproject)
+(require 'eproject-extras)
