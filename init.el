@@ -41,6 +41,7 @@
  (cons 'ido-ubiquitous marmalade)
  (cons 'smex marmalade)
  (cons 'geben marmalade)
+ (cons 'php-mode marmalade)
 )
 
 ;; Load extensions
@@ -50,6 +51,10 @@
 (eval-after-load 'android-mode '(require 'setup-android))
 (eval-after-load 'ecb '(require 'setup-ecb))
 (eval-after-load 'twittering-mode '(require 'setup-twitter))
+(eval-after-load 'php-mode '(require 'setup-php))
+(eval-after-load 'c++-mode '(require 'setup-c++))
+
+(require 'mode-mappings)
 
 (require 'smex)
 (smex-initialize)
