@@ -21,7 +21,7 @@
 (global-set-key (kbd "C-M-m") 'mark-more-like-this) ; like the other two, but takes an argument (negative is previous)
 (global-set-key (kbd "C-*") 'mark-all-like-this)
 
-(global-set-key (kbd "M-x") 'smex)  
+(global-set-key (kbd "M-x") 'smex)
 
 ;; eproject global bindings
 (defmacro .emacs-curry (function &rest args)
