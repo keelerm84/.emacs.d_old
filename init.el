@@ -19,10 +19,6 @@
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
 
-;; Keep emacs Custom-settings in separate file
-(setq custom-file (expand-file-name "custom.el" dotfiles-dir))
-(load custom-file)
-
 ;; Write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
                                         (concat dotfiles-dir "backups")))))
@@ -32,17 +28,23 @@
   (server-start))
 
 (require 'setup-package)
+(defun init--install-packages()
+  (packages-install
+   (cons 'magit melpa)
+   (cons 'color-theme melpa)
+   (cons 'jabber marmalade)
+   (cons 'ecb marmalade)
+   (cons 'ido-ubiquitous marmalade)
+   (cons 'smex marmalade)
+   (cons 'geben marmalade)
+   (cons 'php-mode marmalade)
+   ))
 
-(packages-install
- (cons 'magit melpa)
- (cons 'color-theme melpa)
- (cons 'jabber marmalade)
- (cons 'ecb marmalade)
- (cons 'ido-ubiquitous marmalade)
- (cons 'smex marmalade)
- (cons 'geben marmalade)
- (cons 'php-mode marmalade)
-)
+(condition-case nil
+    (init--install-packages)
+  (error
+   (package-refresh-contents)
+   (init--install-packages)))
 
 ;; Load extensions
 (eval-after-load 'magit '(require 'setup-magit))
@@ -81,3 +83,8 @@
 (require 'geben)
 (require 'eproject)
 (require 'eproject-extras)
+
+;; Keep emacs Custom-settings in separate file
+(setq custom-file (expand-file-name "custom.el" dotfiles-dir))
+(if (file-exists-p custom-file)
+    (load custom-file))
