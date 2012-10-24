@@ -10,6 +10,7 @@
 
 ;; Project Management
 (global-set-key (kbd "C-c p") 'fuzzy-find-in-project)
+(global-set-key (kbd "C-c C-p") 'set-fuzzy-project-root)
 
 (global-set-key (kbd "M-i") 'change-inner)
 (global-set-key (kbd "M-o") 'change-outer)
