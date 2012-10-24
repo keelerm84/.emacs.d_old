@@ -27,4 +27,6 @@
 
 (define-key magit-status-mode-map (kbd "W") 'magit-toggle-whitespace)
 
+(add-hook 'magit-log-edit-mode-hook (lambda() (flyspell-mode t)))
+
 (provide 'setup-magit)

@@ -24,6 +24,8 @@
 
 (global-set-key (kbd "M-x") 'smex)
 
+(global-set-key (kbd "C-;") 'magit-status)
+
 ;; eproject global bindings
 (defmacro .emacs-curry (function &rest args)
   `(lambda () (interactive)
