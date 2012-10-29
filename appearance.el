@@ -14,6 +14,8 @@
 
 (global-hl-line-mode 1)
 
+(setq-default show-trailing-whitespace t)
+
 ;; Colors
 (load "~/.emacs.d/site-lisp/color-theme-molokai/color-theme-molokai.el")
 (color-theme-molokai)
