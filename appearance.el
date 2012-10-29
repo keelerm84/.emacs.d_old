@@ -1,9 +1,5 @@
 (set-face-attribute 'default nil :font "Consolas-10")
 
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-
 (setq-default fill-column 1200)
 (global-linum-mode t)
 (setq-default tab-width 4)

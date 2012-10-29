@@ -1,5 +1,8 @@
 ;; Main load point for all emacs customizations
 ;; Heavily inspired by magnars .emacs.d repo @ https://github.com/magnars/.emacs.d
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 
 ;; Set path to .emacs.d directory
 (setq dotfiles-dir (file-name-directory
