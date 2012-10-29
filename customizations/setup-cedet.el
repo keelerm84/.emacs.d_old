@@ -6,6 +6,7 @@
 
 (semantic-load-enable-gaudy-code-helpers)
 (global-srecode-minor-mode 1)
+(setq semantic-tag-boundary-p nil)
 
 (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
 (add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)

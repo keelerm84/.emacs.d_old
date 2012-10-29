@@ -13,6 +13,7 @@
 (setq-default inhibit-startup-screen t)
 
 (global-hl-line-mode 1)
+(set-face-background 'hl-line "gray20")
 
 (setq-default show-trailing-whitespace t)
 
@@ -21,13 +22,15 @@
 (color-theme-molokai)
 (setq color-theme-is-global t )
 
-(set-face-foreground 'font-lock-string-face "light gray")
+(set-face-foreground 'default "seashell2")
+
+(set-face-foreground 'font-lock-string-face "AntiqueWhite3")
 (set-face-italic-p 'font-lock-string-face nil)
 
-(set-face-foreground 'font-lock-comment-face "light gray")
+(set-face-foreground 'font-lock-comment-face "bisque3")
 (set-face-italic-p 'font-lock-comment-face nil)
 
-(set-face-foreground 'font-lock-comment-delimiter-face "light gray")
+(set-face-foreground 'font-lock-comment-delimiter-face "bisque3")
 (set-face-italic-p 'font-lock-comment-delimiter-face nil)
 
 (provide 'appearance)
