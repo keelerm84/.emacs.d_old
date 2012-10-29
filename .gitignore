@@ -2,3 +2,4 @@ custom.el
 backups/*
 elpa/*
 auto-save-list/
+/ac-comphist.dat

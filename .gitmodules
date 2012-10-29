@@ -25,3 +25,6 @@
 [submodule "site-lisp/eproject"]
 	path = site-lisp/eproject
 	url = git://github.com/jrockway/eproject.git
+[submodule "site-lisp/auto-complete"]
+	path = site-lisp/auto-complete
+	url = https://github.com/auto-complete/auto-complete.git

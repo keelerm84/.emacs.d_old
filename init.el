@@ -83,6 +83,7 @@
 (require 'geben)
 (require 'eproject)
 (require 'eproject-extras)
+(require 'setup-auto-complete)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" dotfiles-dir))
