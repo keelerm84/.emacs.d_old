@@ -22,6 +22,7 @@
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
 
+(require 'setup-auto-complete)
 (require 'setup-cedet)
 
 ;; Write backup files to own directory
@@ -87,7 +88,6 @@
 (require 'geben)
 (require 'eproject)
 (require 'eproject-extras)
-(require 'setup-auto-complete)
 (require 'ecb)
 
 ;; Keep emacs Custom-settings in separate file

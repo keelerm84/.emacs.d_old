@@ -1,3 +1,4 @@
+(require 'auto-complete)
 (load-file (expand-file-name (concat site-lisp-dir  "/cedet-1.1/common/cedet.el")))
 
 (global-ede-mode 1)
