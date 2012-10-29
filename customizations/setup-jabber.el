@@ -20,6 +20,11 @@
 
 (setq jabber-roster-line-format "%c %-25n %u %-8s  %S")
 
-(add-hook 'jabber-chat-mode-hook (lambda() (flyspell-mode t)))
+(add-hook 'jabber-chat-mode-hook 
+          (lambda() 
+            (flyspell-mode t)
+            (setq truncate-lines t)
+            (setq word-wrap t)
+            ))
 
 (provide 'setup-jabber)
