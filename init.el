@@ -89,6 +89,7 @@
 (require 'eproject)
 (require 'eproject-extras)
 (require 'ecb)
+(require 'magit)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" dotfiles-dir))
