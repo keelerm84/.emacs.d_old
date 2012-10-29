@@ -31,3 +31,6 @@
 [submodule "site-lisp/ecb"]
 	path = site-lisp/ecb
 	url = https://github.com/alexott/ecb.git
+[submodule "site-lisp/python"]
+	path = site-lisp/python
+	url = https://github.com/fgallina/python.el.git
