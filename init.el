@@ -33,7 +33,6 @@
    (cons 'magit melpa)
    (cons 'color-theme melpa)
    (cons 'jabber marmalade)
-   (cons 'ecb marmalade)
    (cons 'ido-ubiquitous marmalade)
    (cons 'smex marmalade)
    (cons 'geben marmalade)
@@ -84,6 +83,7 @@
 (require 'eproject)
 (require 'eproject-extras)
 (require 'setup-auto-complete)
+(require 'ecb)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" dotfiles-dir))
