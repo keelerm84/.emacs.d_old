@@ -3,3 +3,4 @@ backups/*
 elpa/*
 auto-save-list/
 /ac-comphist.dat
+site-lisp/cedet-1.1/

@@ -11,3 +11,10 @@ To grab all the dependencies, either:
     cd .emacs.d
     git submodule init
     git submodule update
+
+CEDET 1.1 needs downloaded and built:
+
+    Download and extract cedet 1.1 to .emacs.d/site-lisp/cedet-1.1
+    cd .emacs.d/site-lisp/cedet-1.1
+    make clean
+    make

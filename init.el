@@ -22,6 +22,8 @@
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
 
+(require 'setup-cedet)
+
 ;; Write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
                                         (concat dotfiles-dir "backups")))))
