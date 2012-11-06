@@ -44,4 +44,6 @@
 (.emacs-eproject-key "b" eproject-ibuffer)
 (.emacs-eproject-key "o" eproject-open-all-project-files)
 
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
 (provide 'key-bindings)

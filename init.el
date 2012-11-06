@@ -60,6 +60,7 @@
 (eval-after-load 'twittering-mode '(require 'setup-twitter))
 (eval-after-load 'php-mode '(require 'setup-php))
 (eval-after-load 'c++-mode '(require 'setup-c++))
+(eval-after-load "ace-jump-mode" '(require 'setup-ace-jump))
 
 (require 'mode-mappings)
 
@@ -90,6 +91,8 @@
 (require 'eproject-extras)
 (require 'ecb)
 (require 'magit)
+(autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
+(autoload 'ace-jump-pop-mark "ace-jump-mode"  "Ace jump back" t)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" dotfiles-dir))
