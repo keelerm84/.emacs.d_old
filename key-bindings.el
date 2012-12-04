@@ -26,6 +26,8 @@
 
 (global-set-key (kbd "C-;") 'magit-status)
 
+(global-set-key (kbd "C-c d") 'duplicate-line)
+
 ;; eproject global bindings
 (defmacro .emacs-curry (function &rest args)
   `(lambda () (interactive)
