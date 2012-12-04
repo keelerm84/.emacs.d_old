@@ -59,7 +59,7 @@
 (eval-after-load 'ecb '(require 'setup-ecb))
 (eval-after-load 'twittering-mode '(require 'setup-twitter))
 (eval-after-load 'php-mode '(require 'setup-php))
-(eval-after-load 'c++-mode '(require 'setup-c++))
+(eval-after-load 'cc-mode '(require 'setup-c++))
 (eval-after-load "ace-jump-mode" '(require 'setup-ace-jump))
 
 (require 'mode-mappings)
