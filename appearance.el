@@ -1,4 +1,4 @@
-(set-face-attribute 'default nil :font "Consolas-10")
+(set-face-attribute 'default nil :font "Mensch-10")
 
 (setq-default fill-column 1200)
 (global-linum-mode t)
