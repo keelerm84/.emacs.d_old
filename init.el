@@ -43,6 +43,7 @@
    (cons 'smex marmalade)
    (cons 'geben marmalade)
    (cons 'php-mode marmalade)
+   (cons 'sql-indent marmalade)
    ))
 
 (condition-case nil
@@ -61,6 +62,7 @@
 (eval-after-load 'php-mode '(require 'setup-php))
 (eval-after-load 'cc-mode '(require 'setup-c++))
 (eval-after-load "ace-jump-mode" '(require 'setup-ace-jump))
+(eval-after-load "sql" (load-library "sql-indent"))
 
 (require 'mode-mappings)
 
@@ -91,6 +93,7 @@
 (require 'eproject-extras)
 (require 'ecb)
 (require 'magit)
+(require 'sql)
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
 (autoload 'ace-jump-pop-mark "ace-jump-mode"  "Ace jump back" t)
 
