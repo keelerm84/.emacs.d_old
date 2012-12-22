@@ -3,6 +3,8 @@
 (global-set-key (kbd "M-z") 'zap-up-to-char)
 (global-set-key (kbd "M-Z") 'zap-to-char)
 
+(global-set-key (kbd "C-c b") 'create-scratch-buffer)
+
 (global-set-key (kbd "C-c h") 'windmove-left)
 (global-set-key (kbd "C-c j") 'windmove-down)
 (global-set-key (kbd "C-c k") 'windmove-up)
@@ -32,6 +34,7 @@
 (global-set-key (kbd "C-;") 'magit-status)
 
 (global-set-key (kbd "C-c d") 'duplicate-line)
+
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-ca" 'org-agenda)

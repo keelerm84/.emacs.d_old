@@ -37,3 +37,6 @@
 [submodule "site-lisp/ace-jump-mode"]
 	path = site-lisp/ace-jump-mode
 	url = https://github.com/winterTTr/ace-jump-mode.git
+[submodule "site-lisp/phpunit"]
+	path = site-lisp/phpunit
+	url = https://github.com/ieure/phpunit-el.git
