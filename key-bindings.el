@@ -1,3 +1,8 @@
+(autoload 'zap-up-to-char "misc"
+  "Kill up to, but not including ARGth occurrence of CHAR.")
+(global-set-key (kbd "M-z") 'zap-up-to-char)
+(global-set-key (kbd "M-Z") 'zap-to-char)
+
 (global-set-key (kbd "C-c h") 'windmove-left)
 (global-set-key (kbd "C-c j") 'windmove-down)
 (global-set-key (kbd "C-c k") 'windmove-up)
