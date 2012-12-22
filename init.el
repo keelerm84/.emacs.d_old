@@ -25,8 +25,8 @@
 (require 'setup-auto-complete)
 (require 'setup-cedet)
 
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
+;; el-get setup
+(add-to-list 'load-path (expand-file-name "el-get/el-get/" dotfiles-dir))
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
@@ -36,6 +36,7 @@
 
 (el-get 'sync)
 (el-get-install 'yaml-mode)
+(el-get-install 'yasnippet)
 ;; Write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
                                         (concat dotfiles-dir "backups")))))
@@ -105,6 +106,7 @@
 (require 'ecb)
 (require 'magit)
 (require 'sql)
+(require 'setup-yasnippet)
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
 (autoload 'ace-jump-pop-mark "ace-jump-mode"  "Ace jump back" t)
 

@@ -8,8 +8,12 @@
 (defun set-fuzzy-project-root ()
   (interactive)
   (if (buffer-file-name)
-      (fuzzy-find-project-root (if (ignore-errors (eproject-root))
-	  (eproject-root)
-	(or (find-git-repo (buffer-file-name)) (file-name-directory (buffer-file-name)))))))
+      (fuzzy-find-project-root (find-project-root))))
+
+(defun find-project-root ()
+  (interactive)
+  (if (ignore-errors (eproject-root))
+      (eproject-root)
+    (or (find-git-repo (buffer-file-name)) (file-name-directory (buffer-file-name)))))
 
 (provide 'file-defuns)
