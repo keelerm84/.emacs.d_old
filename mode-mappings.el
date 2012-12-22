@@ -7,4 +7,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.sql\\'" . sql-mode))
 
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
 (provide 'mode-mappings)
