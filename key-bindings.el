@@ -1,6 +1,9 @@
 (global-set-key (kbd "C-c b") 'create-scratch-buffer)
 
 ;; emms controls
+(require 'emms-setup)
+(emms-standard)
+(emms-default-players)
 
 (global-set-key (kbd "<f5>") 'emms-shuffle)
 (global-set-key (kbd "<f6>") 'emms-pause)
