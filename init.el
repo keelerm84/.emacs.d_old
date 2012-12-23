@@ -37,6 +37,7 @@
 (el-get 'sync)
 (el-get-install 'yaml-mode)
 (el-get-install 'yasnippet)
+(el-get-install 'cmake-mode)
 ;; Write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
                                         (concat dotfiles-dir "backups")))))
