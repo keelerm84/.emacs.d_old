@@ -9,6 +9,14 @@
   ad-do-it
   (delete-other-windows))
 
+(defun magit-quit-session ()
+  "Restores the previous window configuration and kills the magit buffer"
+  (interactive)
+  (kill-buffer)
+  (jump-to-register :magit-fullscreen))
+
+(define-key magit-status-mode-map (kbd "q") 'magit-quit-session)
+
 (defun magit-toggle-whitespace ()
   (interactive)
   (if (member "-w" magit-diff-options)
