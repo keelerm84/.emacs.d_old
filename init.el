@@ -114,6 +114,9 @@
 (setq custom-file (expand-file-name "custom.el" dotfiles-dir))
 (if (file-exists-p custom-file)
     (load custom-file))
+
+(setq user-mail-address "keelerm84@gmail.com")
+
 (put 'narrow-to-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
