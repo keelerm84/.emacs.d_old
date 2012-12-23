@@ -35,9 +35,15 @@
     (eval-print-last-sexp)))
 
 (el-get 'sync)
+
+;; el-get installations
+(el-get-install 'wanderlust)
+(el-get-install 'bbdb)
 (el-get-install 'yaml-mode)
 (el-get-install 'yasnippet)
 (el-get-install 'cmake-mode)
+(el-get-install 'markdown-mode)
+
 ;; Write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
                                         (concat dotfiles-dir "backups")))))
