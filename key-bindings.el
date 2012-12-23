@@ -1,5 +1,15 @@
 (global-set-key (kbd "C-c b") 'create-scratch-buffer)
 
+;; emms controls
+
+(global-set-key (kbd "<f5>") 'emms-shuffle)
+(global-set-key (kbd "<f6>") 'emms-pause)
+(global-set-key (kbd "<f7>") 'emms-previous)
+(global-set-key (kbd "<f8>") 'emms-next)
+(global-set-key (kbd "<f9>") 'emms-volume-lower)
+(global-set-key (kbd "<f10>") 'emms-volume-raise)
+
+
 ;; Window controls
 (global-set-key (kbd "C-c h") 'windmove-left)
 (global-set-key (kbd "C-c j") 'windmove-down)
