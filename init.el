@@ -84,6 +84,7 @@
 (eval-after-load "ace-jump-mode" '(require 'setup-ace-jump))
 (eval-after-load "sql" (load-library "sql-indent"))
 (eval-after-load 'org '(require 'setup-org-mode))
+(eval-after-load 'hs-minor-mode '(require 'setup-hs-mode))
 
 (require 'mode-mappings)
 
@@ -118,6 +119,10 @@
 (require 'setup-yasnippet)
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
 (autoload 'ace-jump-pop-mark "ace-jump-mode"  "Ace jump back" t)
+(define-globalized-minor-mode global-hs-minor-mode
+  hs-minor-mode hs-minor-mode)
+
+(global-hs-minor-mode 1)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" dotfiles-dir))

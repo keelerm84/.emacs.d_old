@@ -12,6 +12,11 @@
 (global-set-key (kbd "<f9>") 'emms-volume-lower)
 (global-set-key (kbd "<f10>") 'emms-volume-raise)
 
+;; Hide / Show
+(global-set-key (kbd "M-<left>") 'hs-hide-block)
+(global-set-key (kbd "M-<right>") 'hs-show-block)
+(global-set-key (kbd "M-S-<left>") 'hs-hide-all)
+(global-set-key (kbd "M-S-<right>") 'hs-show-all)
 
 ;; Window controls
 (global-set-key (kbd "C-c h") 'windmove-left)
