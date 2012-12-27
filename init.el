@@ -43,6 +43,7 @@
 (el-get-install 'yasnippet)
 (el-get-install 'cmake-mode)
 (el-get-install 'markdown-mode)
+(el-get-install 'js2-mode)
 
 ;; Write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
@@ -85,6 +86,7 @@
 (eval-after-load "sql" (load-library "sql-indent"))
 (eval-after-load 'org '(require 'setup-org-mode))
 (eval-after-load 'hs-minor-mode '(require 'setup-hs-mode))
+(eval-after-load 'js2-mode '(require 'setup-js2-mode))
 
 (require 'mode-mappings)
 
@@ -123,6 +125,13 @@
   hs-minor-mode hs-minor-mode)
 
 (global-hs-minor-mode 1)
+
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(require 'slime)
+(slime-setup '(slime-fancy slime-js))
+
+(autoload 'slime-js-jack-in-browser "setup-slime-js" nil t)
+(autoload 'slime-js-jack-in-node "setup-slime-js" nil t)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" dotfiles-dir))

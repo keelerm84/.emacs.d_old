@@ -40,3 +40,15 @@
 [submodule "site-lisp/phpunit"]
 	path = site-lisp/phpunit
 	url = https://github.com/ieure/phpunit-el.git
+[submodule "site-lisp/slime"]
+	path = site-lisp/slime
+	url = https://github.com/antifuchs/slime.git
+[submodule "site-lisp/swank-js"]
+	path = site-lisp/swank-js
+	url = https://github.com/swank-js/swank-js.git
+[submodule "site-lisp/js2-refactor"]
+	path = site-lisp/js2-refactor
+	url = https://github.com/magnars/js2-refactor.el.git
+[submodule "site-lisp/dash"]
+	path = site-lisp/dash
+	url = https://github.com/magnars/dash.el.git
