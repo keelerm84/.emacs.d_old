@@ -63,7 +63,7 @@
    (cons 'geben marmalade)
    (cons 'php-mode marmalade)
    (cons 'sql-indent marmalade)
-   (cons 'emms marmalade)
+   (cons 'emms melpa)
    ))
 
 (condition-case nil
