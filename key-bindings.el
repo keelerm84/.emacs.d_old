@@ -80,4 +80,6 @@
 (.emacs-eproject-key "b" eproject-ibuffer)
 (.emacs-eproject-key "o" eproject-open-all-project-files)
 
+(global-set-key (kbd "C-c n") 'cleanup-buffer)
+
 (provide 'key-bindings)
