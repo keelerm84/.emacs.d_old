@@ -13,7 +13,7 @@
 (setq-default inhibit-startup-screen t)
 
 (global-hl-line-mode 1)
-(set-face-background 'hl-line "gray20")
+(set-face-background 'hl-line "gray30")
 
 (setq-default show-trailing-whitespace t)
 
