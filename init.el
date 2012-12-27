@@ -83,6 +83,7 @@
 (eval-after-load 'cc-mode '(require 'setup-c++))
 (eval-after-load "ace-jump-mode" '(require 'setup-ace-jump))
 (eval-after-load "sql" (load-library "sql-indent"))
+(eval-after-load 'org '(require 'setup-org-mode))
 
 (require 'mode-mappings)
 
