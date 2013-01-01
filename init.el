@@ -37,7 +37,6 @@
 (el-get 'sync)
 
 ;; el-get installations
-(el-get-install 'wanderlust)
 (el-get-install 'bbdb)
 (el-get-install 'yaml-mode)
 (el-get-install 'yasnippet)
@@ -137,6 +136,7 @@
 (if (file-exists-p custom-file)
     (load custom-file))
 
+(setq user-full-name "Matthew M. Keeler")
 (setq user-mail-address "keelerm84@gmail.com")
 
 (put 'narrow-to-region 'disabled nil)
