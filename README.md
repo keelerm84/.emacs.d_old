@@ -1,9 +1,8 @@
-.emacs.d Configuration
-======================
+# .emacs.d Configuration #
 
 This repo provides all of my emacs customizations, allowing for quick setup on new machines.  A big thanks to magnars, from whom I stole most of this. ;)  Watch his excellent videos at [Emacs Rocks](http://emacsrocks.com).
 
-## Setup
+## Setup ##
 
 To grab all the dependencies, either:
 
@@ -19,6 +18,9 @@ CEDET 1.1 needs downloaded and built:
     make clean
     make
 
-SLIME
-There is currently a problem with slime when connecting to a browser.  It will occassionally hang due to some conflict.  Until this is resolved, you need to edit slime-fancy.el and remove the reference to auto-doc.
 
+## Known Issues ##
+### SLIME ###
+There is currently a problem with slime when connecting to a browser.  It will occassionally hang due to some conflict.  Until this is resolved, you need to edit slime-fancy.el and remove the reference to auto-doc.
+### Cedet / Semantic ###
+Semantic will throw a wisent parse error when working in JavaScript, resulting in Emacs freezing.  To resolve this, edit semantic.el and wrap the while loop in semantic-repeat-parse-whole-stream with save-excursion.
