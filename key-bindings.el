@@ -93,5 +93,7 @@
 (.emacs-eproject-key "o" eproject-open-all-project-files)
 
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
+(global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
+(global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
 
 (provide 'key-bindings)
