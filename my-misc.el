@@ -5,9 +5,13 @@
 
 (set-default 'indent-tabs-mode nil)
 
+;; Auto refresh buffers
+(global-auto-revert-mode 1)
 
-(eval-after-load "dired-aux"
-   '(add-to-list 'dired-compress-file-suffixes
-                 '("\\.zip\\'" ".zip" "unzip")))
+;; Also auto refresh dired, but be quiet about it
+(setq global-auto-revert-non-file-buffers t)
+(setq auto-revert-verbose nil)
+
+
 
 (provide 'my-misc)
