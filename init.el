@@ -65,6 +65,7 @@
    (cons 'sql-indent marmalade)
    (cons 'emms melpa)
    (cons 'web-mode marmalade)
+   (cons 'dired-details marmalade)
    ))
 
 (condition-case nil
@@ -87,6 +88,7 @@
 (eval-after-load 'org '(require 'setup-org-mode))
 (eval-after-load 'hs-minor-mode '(require 'setup-hs-mode))
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
+(eval-after-load 'dired '(require 'setup-dired))
 
 (require 'mode-mappings)
 
