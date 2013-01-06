@@ -1,5 +1,4 @@
-(set-face-attribute 'default nil :font "Mensch-10")
-
+(setq default-frame-alist '((font . "Mensch-10")))
 (setq-default fill-column 1200)
 (global-linum-mode t)
 (setq-default tab-width 4)
@@ -57,3 +56,4 @@
 (set-face-attribute 'show-paren-match-face nil :weight 'extra-bold)
 
 (provide 'appearance)
+
