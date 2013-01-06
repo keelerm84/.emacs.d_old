@@ -1,5 +1,7 @@
 ;; Basic text editing defuns
 
+(require 'dash)
+
 (defun move-line-down ()
   (interactive)
   (let ((col (current-column)))
@@ -88,7 +90,7 @@ region-end is used. Adds the duplicated text to the kill ring."
 (defadvice yank (after yank-indent activate)
   "If current mode is one of 'yank-indent-modes, indent yanked text (with prefix arg don't indent)."
   (if (and (not (ad-get-arg 0))
-           (--any? (derived-mode-p it) yank-indent-modes))
+           (--any-p (derived-mode-p 'it) yank-indent-modes))
       (let ((transient-mark-mode nil))
         (yank-advised-indent-function (region-beginning) (region-end)))))
 
