@@ -55,5 +55,7 @@
 (setq show-paren-delay 0)
 (set-face-attribute 'show-paren-match-face nil :weight 'extra-bold)
 
+(require 'powerline)
+
 (provide 'appearance)
 

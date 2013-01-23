@@ -52,3 +52,6 @@
 [submodule "site-lisp/dash"]
 	path = site-lisp/dash
 	url = https://github.com/magnars/dash.el.git
+[submodule "site-lisp/emacs-powerline"]
+	path = site-lisp/emacs-powerline
+	url = https://github.com/jonathanchu/emacs-powerline.git
