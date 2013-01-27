@@ -99,4 +99,6 @@
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
 
+(define-key global-map (kbd "C-c c") 'org-capture)
+
 (provide 'key-bindings)
