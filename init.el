@@ -43,6 +43,7 @@
 (el-get-install 'cmake-mode)
 (el-get-install 'markdown-mode)
 (el-get-install 'js2-mode)
+(el-get-install 'eclim)
 
 ;; Write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
@@ -120,6 +121,13 @@
 (require 'magit)
 (require 'sql)
 (require 'setup-yasnippet)
+
+(require 'eclim)
+(global-eclim-mode)
+(require 'eclimd)
+(require 'auto-complete-config)
+(ac-config-default)
+
 (autoload 'ace-jump-mode "ace-jump-mode" "Emacs quick move minor mode" t)
 (autoload 'ace-jump-pop-mark "ace-jump-mode"  "Ace jump back" t)
 (define-globalized-minor-mode global-hs-minor-mode
