@@ -3,6 +3,8 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (setq org-agenda-files '("~/Documents/Dropbox/OrgFiles"))
 
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 
 (add-to-list 'auto-mode-alist '("\\.sql\\'" . sql-mode))
