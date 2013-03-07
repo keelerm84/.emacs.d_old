@@ -1,4 +1,4 @@
-(setq default-frame-alist '((font . "Mensch-10")))
+;;(setq default-frame-alist '((font . "Mensch-10")))
 (setq-default fill-column 1200)
 (global-linum-mode t)
 (setq-default tab-width 4)
@@ -55,7 +55,6 @@
 (setq show-paren-delay 0)
 (set-face-attribute 'show-paren-match-face nil :weight 'extra-bold)
 
-(require 'powerline)
+;(require 'powerline)
 
 (provide 'appearance)
-
